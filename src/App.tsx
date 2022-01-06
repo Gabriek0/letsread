@@ -1,12 +1,13 @@
 import { Header } from "./Header";
+import { Post } from "./Posts";
 import { GlobalStyle } from "./styles/global";
-import { Summary } from "./Summary";
+
 
 export function App() {
   return (
     <>
       <Header />
-      <Summary />
+      <Post />
       <GlobalStyle />
     </>
   );
