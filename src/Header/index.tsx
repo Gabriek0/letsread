@@ -1,7 +1,11 @@
 import logoImg from '../assets/blogger.png';
 import { Container, Content } from './styles';
 
-export function Header() {
+interface HeaderProps {
+    openNewPostModal: () => void;
+};
+
+export function Header({ openNewPostModal }: HeaderProps) {
     return (
         <Container>
             <Content>
@@ -10,7 +14,7 @@ export function Header() {
                     Let's
                     <span>Read</span>
                 </h1>
-                <button>
+                <button onClick={openNewPostModal}>
                     Nova postagem
                 </button>
             </Content>
