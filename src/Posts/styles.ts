@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 
+
 export const PostStyle = styled.ul`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -12,7 +13,7 @@ export const PostStyle = styled.ul`
         flex-direction: column;
         height: 50%;
         padding: 1rem;
-        border: 1px solid black;
+
     }
 
     img {

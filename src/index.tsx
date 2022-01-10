@@ -42,6 +42,11 @@ createServer({
     this.get('/posts', () => {
       return this.schema.all('post');
     })
+
+    this.post('/posts', (schema, request) => {
+      const data = JSON.parse(request.requestBody)
+      return data;
+    })
   }
 })
 
