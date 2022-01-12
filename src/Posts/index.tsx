@@ -5,7 +5,7 @@ import { Container } from './styles';
 import { PostStyle } from './styles';
 
 export function Post() {
-    const posts = useContext(PostContext);
+    const { posts } = useContext(PostContext);
 
     return (
         <Container>
@@ -14,7 +14,7 @@ export function Post() {
                     <li key={post.id}>
                         <img src={post.image} alt={post.title}></img>
                         <h2>{post.title}</h2>
-                        <h5>{new Intl.DateTimeFormat('pt-BR').format(new Date(post.createAt))}</h5>
+                        <h5>{Intl.DateTimeFormat('pt-BR').format(new Date(post.createAt))}</h5>
                         <p>{post.description}</p>
                         <span>Leia mais</span>
                     </li>

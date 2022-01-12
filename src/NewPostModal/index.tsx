@@ -12,23 +12,26 @@ interface ModalProps {
 };
 
 export function NewPostModal({ isOpen, onRequestClose }: ModalProps) {
+    const { createPost } = useContext(PostContext);
+
     const [image, setImage] = useState('');
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
 
-    function handleNewPost(event: FormEvent) {
+    async function handleNewPost(event: FormEvent) {
 
         event.preventDefault();
 
-        const data = {
+        await createPost({
             image,
             title,
             description
-        }
+        })
 
-        console.log(data);
-
-        api.post('/posts', data);
+        onRequestClose();
+        setImage('');
+        setTitle('');
+        setDescription('');
     }
 
     return (
