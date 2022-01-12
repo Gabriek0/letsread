@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Header } from "./Header";
 import { NewPostModal } from "./NewPostModal";
+import { PostProvider } from "./PostContext";
 import { Post } from "./Posts";
 import { GlobalStyle } from "./styles/global";
 
@@ -17,7 +18,7 @@ export function App() {
   }
 
   return (
-    <>
+    <PostProvider>
       <Header openNewPostModal={handleOpenNewPostModal} />
       <Post />
       <NewPostModal
@@ -25,6 +26,6 @@ export function App() {
         onRequestClose={handleCloseNewPostModal}
       />
       <GlobalStyle />
-    </>
+    </PostProvider>
   );
 }

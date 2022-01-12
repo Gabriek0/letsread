@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { transparentize, darken } from 'polished'
 
 export const ModalStyle = styled.form`
     display: flex;
@@ -13,6 +12,7 @@ export const ModalStyle = styled.form`
         border-radius: 0.25rem;
         border: 1px solid #d7d7d7;
         background: #e7e9ee;
+        margin-top: 1rem;
 
         font-weight: 400;
         font-size: 1rem;
@@ -36,7 +36,6 @@ export const ModalStyle = styled.form`
     }
 
     textarea {
-        margin-top: 2rem;
         padding: 1.5rem
     }
 
