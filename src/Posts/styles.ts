@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { darken } from 'polished';
+
 
 
 export const PostStyle = styled.ul`
@@ -19,7 +21,7 @@ export const PostStyle = styled.ul`
     img {
         align-self: center;
         height: 20rem;
-        width: 20rem;
+        width: 100%;
     }
 
     h2, h5 {
@@ -34,14 +36,12 @@ export const PostStyle = styled.ul`
 
     h5 {
         text-align: left;
-        padding-left: 4rem;
+        padding-left: 3.5rem;
         opacity: 0.7;
         font-weight: 400;
     }
 
     p {
-        overflow: hidden;
-        text-overflow: ellipsis;
         color: var(--gray);
         text-align: justify;
     };
@@ -49,6 +49,12 @@ export const PostStyle = styled.ul`
     span {
         color: blue;
         margin-top: 1rem;
+        cursor: pointer;
+        transition: color 0.4s;
+
+        &:hover {
+            color: ${darken(0.4, "#0920fd")}
+        }
     }
 `
 
