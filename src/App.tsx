@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Header } from "./Header";
 import { NewPostModal } from "./NewPostModal";
-import { PostProvider } from "./PostContext";
+import { PostProvider } from "./hooks/PostContext";
 import { Post } from "./Posts";
 import { GlobalStyle } from "./styles/global";
 

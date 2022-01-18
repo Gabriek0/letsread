@@ -1,8 +1,7 @@
 import { FormEvent, useContext, useState } from "react";
 import Modal from "react-modal";
 import closeButton from "../assets/close.svg";
-import { PostContext } from "../PostContext";
-import { api } from "../services/api";
+import { PostContext } from "../hooks/PostContext";
 import { ModalStyle } from "./styles";
 
 

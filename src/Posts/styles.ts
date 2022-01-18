@@ -1,54 +1,59 @@
 import styled from 'styled-components';
 import { darken } from 'polished';
 
-
-
 export const PostStyle = styled.ul`
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     list-style: none;
     margin-top: 5rem;
-
+    
     li {
         display: flex;
         flex-direction: column;
-        height: 50%;
-        padding: 1rem;
+        justify-content: center;
+        margin-bottom: 1rem;
 
+        height: 40rem; // Altura muda dinâmicamente conforme o tamanho do container pai
+        width: 35rem;
+        position: relative;
     }
 
     img {
         align-self: center;
-        height: 20rem;
-        width: 100%;
+        height: 50%;
+        width: 50%;
     }
-
+    
     h2, h5 {
         padding: 0.5rem;
         color: var(--dimgray);
     }
-
+    
     h2 { 
         text-align: center;
         font-weight: 500;
+        word-wrap: break-word;
     }
-
+    
     h5 {
-        text-align: left;
-        padding-left: 3.5rem;
+        text-align: center;
         opacity: 0.7;
         font-weight: 400;
     }
-
+    
     p {
         color: var(--gray);
         text-align: justify;
+        word-wrap: break-word;
     };
 
     span {
+        left: 1;
+        bottom: 0;
         color: blue;
-        margin-top: 1rem;
+        margin-top: 2rem;
         cursor: pointer;
         transition: color 0.4s;
 
@@ -59,5 +64,6 @@ export const PostStyle = styled.ul`
 `
 
 export const Container = styled.div`
-    padding: 0 4rem
-`
+    padding: 0 4rem;
+    height: 100%;
+    `
