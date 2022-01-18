@@ -14,16 +14,20 @@ export const PostStyle = styled.ul`
         flex-direction: column;
         justify-content: center;
         margin-bottom: 1rem;
+        border: 1px solid black;
 
-        height: 40rem; // Altura muda dinâmicamente conforme o tamanho do container pai
+        height: 45rem; // Altura muda dinâmicamente conforme o tamanho do container pai
         width: 35rem;
         position: relative;
     }
 
     img {
-        align-self: center;
-        height: 50%;
-        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 30%;
+        object-fit: cover;
     }
     
     h2, h5 {
@@ -65,5 +69,4 @@ export const PostStyle = styled.ul`
 
 export const Container = styled.div`
     padding: 0 4rem;
-    height: 100%;
     `

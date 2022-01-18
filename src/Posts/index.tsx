@@ -22,7 +22,7 @@ function PostItem({ post }: PostItemProps) {
             <h2>{post.title}</h2>
             <h5>{Intl.DateTimeFormat('pt-BR').format(new Date(post.createAt))}</h5>
             <p>
-                {showMore ? post.description : post.description.substring(0, 250)}
+                {showMore ? post.description : post.description.substring(0, 250) + '...'}
             </p>
 
             <span onClick={() => setShowMore(!showMore)}>
