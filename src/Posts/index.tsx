@@ -25,9 +25,9 @@ function PostItem({ post }: PostItemProps) {
                 {showMore ? post.description : post.description.substring(0, 250) + '...'}
             </p>
 
-            <span onClick={() => setShowMore(!showMore)}>
+            <button onClick={() => setShowMore(!showMore)}>
                 {showMore ? 'Mostrar menos' : 'Mostrar mais'}
-            </span>
+            </button>
         </li>
     )
 }

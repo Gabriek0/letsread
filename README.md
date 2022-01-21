@@ -1,6 +1,7 @@
 <h1 align="center">Let's <span style="color:#fc931e">Read</span> 📚</h1>
 
-
+<img src="./public/letsread.gif">
+<br></br>
 <p align="justify">Um projeto onde o usuário é capaz de adicionar postagens em um blog.</p>
 
 

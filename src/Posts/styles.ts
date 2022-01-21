@@ -3,31 +3,27 @@ import { darken } from 'polished';
 
 export const PostStyle = styled.ul`
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 
+    min-height: 1160px;
+
     list-style: none;
+
     margin-top: 5rem;
     
     li {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         margin-bottom: 1rem;
-        border: 1px solid black;
+        padding: 1rem 2rem;
 
-        height: 45rem; // Altura muda dinâmicamente conforme o tamanho do container pai
-        width: 35rem;
+        width: 30rem;
         position: relative;
     }
 
     img {
-        display: flex;
         align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 30%;
-        object-fit: cover;
     }
     
     h2, h5 {
@@ -49,20 +45,28 @@ export const PostStyle = styled.ul`
     
     p {
         color: var(--gray);
+        line-height: 1.8;
         text-align: justify;
         word-wrap: break-word;
     };
 
-    span {
+    button {
         left: 1;
         bottom: 0;
-        color: blue;
+        border: 0;
+        border-radius: 0.2rem;
+        outline: none;
+        padding: 0.5rem 1rem;
+        width: 35%;
+        font-weight: 500;
+        color: #fff;
+        background: #fc931e;
         margin-top: 2rem;
         cursor: pointer;
         transition: color 0.4s;
 
         &:hover {
-            color: ${darken(0.4, "#0920fd")}
+            background: ${darken(0.1, "#fc931e")}
         }
     }
 `
