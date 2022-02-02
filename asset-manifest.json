@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/letsread/static/js/main.9baae3b2.js",
+    "index.html": "/letsread/index.html",
+    "static/media/close.svg": "/letsread/static/media/close.3e141cd0857f961999baa367bad49474.svg",
+    "main.9baae3b2.js.map": "/letsread/static/js/main.9baae3b2.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.9baae3b2.js"
+  ]
+}
